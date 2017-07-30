@@ -5,7 +5,6 @@ library(Cairo)
 x <- seq(1, 10, 1)
 y <- 1 + 2 * x + rnorm(length(x)) * 5
 data_mat <- cbind(x, y)
-data_scaled <- scale(data_mat, center = TRUE, scale = TRUE)
 
 # PCA
 data_scaled <- scale(data_mat, center = TRUE, scale = TRUE)
